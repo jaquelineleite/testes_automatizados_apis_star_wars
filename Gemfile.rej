@@ -1,0 +1,8 @@
+diff a/Gemfile b/Gemfile	(rejected hunks)
+@@ -2,3 +2,4 @@
+ 
+ gem 'httparty'
+\ No newline at end of file
++gem 'rspec'
+ gem 'json-schema'
+\ No newline at end of file
