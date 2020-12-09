@@ -18,9 +18,15 @@ require 'httparty'
 require 'httparty/request'
 require 'httparty/response/headers'
 
-require_relative '..services/swapi_service.rb'
+require "json-schema"
+
+require "date"
+
+# referência de onde esta o arquivo com o modulo SWAPI
+require_relative '../services/swapi_service.rb'
+
 RSpec.configure do |config|
-  # Global
+  # Módulo global
   include SWAPI
 
   # Gerar relatórios com Rspec
