@@ -36,7 +36,7 @@ A suíte contempla os seguintes cenários de teste:
 1. Validação do formato JSON retornado pela API de filmes.
 2. Validação de resposta HTTP para requisições GET.
 3. Validação de retorno para recurso inexistente.
-4. Validação do comportamento ao consultar um filme inexistente.
+4.  Validação do retorno 404 ao consultar um filme inexistente.
 5. Validação do título de um episódio.
 6. Validação do `episode_id` e do tipo do dado retornado.
 7. Validação do formato da data de lançamento.
@@ -63,7 +63,7 @@ O projeto utiliza **GitHub Actions** para executar automaticamente a suíte de t
 O pipeline é executado em:
 
 * Push para a branch `main`
-* Pull Requests direcionados para a branch `main`
+* Pull requests direcionados para a branch `main`
 
 O workflow executa automaticamente:
 
@@ -74,5 +74,3 @@ bundle exec rspec
 ## Status dos testes
 
 **8 cenários automatizados executados com sucesso.**
-
-O status da execução também pode ser acompanhado pelo badge **API Tests** exibido no início deste README.
