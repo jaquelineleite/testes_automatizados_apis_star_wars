@@ -1,4 +1,5 @@
 # Automação de Testes de API - Star Wars (SWAPI)
+
 [![API Tests](https://github.com/jaquelineleite/testes_automatizados_apis_star_wars/actions/workflows/api-tests.yml/badge.svg)](https://github.com/jaquelineleite/testes_automatizados_apis_star_wars/actions/workflows/api-tests.yml)
 
 Projeto de automação de testes de API desenvolvido utilizando **Ruby**, **RSpec** e **HTTParty**, consumindo a API pública **SWAPI (Star Wars API)**.
@@ -7,24 +8,26 @@ O objetivo do projeto é demonstrar a criação e execução de testes automatiz
 
 ## Tecnologias utilizadas
 
-- Ruby
-- RSpec
-- HTTParty
-- Bundler
-- API REST
-- SWAPI
+* Ruby
+* RSpec
+* HTTParty
+* Bundler
+* API REST
+* SWAPI
+* GitHub Actions
 
 ## Pré-requisitos
 
 Para executar o projeto é necessário possuir:
 
-- Ruby instalado
-- Bundler instalado
+* Ruby instalado
+* Bundler instalado
 
 Para instalar o Bundler:
 
 ```bash
 gem install bundler
+```
 
 ## Cenários automatizados
 
@@ -39,16 +42,37 @@ A suíte contempla os seguintes cenários de teste:
 7. Validação do formato da data de lançamento.
 8. Validação dos dados do personagem C-3PO, incluindo altura, peso e participação em filmes.
 
+## Executando o projeto
+
+Instale as dependências:
+
+```bash
+bundle install
+```
+
+Execute a suíte de testes:
+
+```bash
+bundle exec rspec
+```
+
 ## Integração Contínua
 
 O projeto utiliza **GitHub Actions** para executar automaticamente a suíte de testes RSpec.
 
 O pipeline é executado em:
 
-- Push para a branch `main`
-- Pull Requests direcionados para a branch `main`
+* Push para a branch `main`
+* Pull Requests direcionados para a branch `main`
 
-Execução dos testes:
+O workflow executa automaticamente:
 
 ```bash
 bundle exec rspec
+```
+
+## Status dos testes
+
+**8 cenários automatizados executados com sucesso.**
+
+O status da execução também pode ser acompanhado pelo badge **API Tests** exibido no início deste README.
