@@ -8,4 +8,4 @@ gem "bigdecimal", "~> 4.1"
 
 gem "csv", "~> 3.3"
 
-gem "json-schema", "~> 6.2"
+gem "logger", "~> 1.7"
