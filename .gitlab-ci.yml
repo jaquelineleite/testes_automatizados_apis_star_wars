@@ -18,4 +18,12 @@ rspec-tests:
     - bundle install
 
   script:
-    - bundle exec rspec
+    - bundle exec rspec --format progress --format RspecJunitFormatter --out rspec.xml
+
+  artifacts:
+    when: always
+    reports:
+      junit: rspec.xml
+    paths:
+      - rspec.xml
+    expire_in: 7 days
